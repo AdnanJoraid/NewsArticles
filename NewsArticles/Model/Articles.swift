@@ -7,6 +7,7 @@
 
 import Foundation
 
-struct Articles: Decodable {
+struct Articles: Decodable, Identifiable {
+    let id = UUID()
     let articles: [Article]
 }
